@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<catalogue>
+    
+    <marque nom="Nike">
+        <anneeCreation>1971</anneeCreation>
+        <origine>USA</origine>
+        <fondateur>William J. Bowerman</fondateur>
+        <fondateur>Philip H. Knight</fondateur>
+        <slogan>Just do it</slogan>
+        <chiffreAffaires unite="euros">10400000000</chiffreAffaires>
+        <site url="http://www.nike.com" />
+    </marque>
+    
+    <marque nom="Adidas">
+        <anneeCreation>1949</anneeCreation>
+        <origine>Allemagne</origine>
+        <fondateur>Adolf Dassler</fondateur>
+        <slogan>Adidas is all in</slogan>
+        <chiffreAffaires unite="euros">5550000000</chiffreAffaires>
+        <site url="http://www.adidas.com" />
+    </marque>
+    
+    <marque nom="Converse">
+        <anneeCreation>1908</anneeCreation>
+        <origine>USA</origine>
+        <fondateur>Marquis Mills Converse</fondateur>
+        <slogan>All Stars</slogan>
+        <chiffreAffaires unite="euros">9401400</chiffreAffaires>
+        <site url="www.converse.com" />
+    </marque>
+    
+   
+    <marque nom="Puma"> 
+        <anneeCreation>1948</anneeCreation>
+        <origine>Allemagne</origine>
+        <fondateur>Rudolf Dassler</fondateur>
+        <slogan>Forever Faster</slogan>
+        <chiffreAffaires unite="euros">5234000000</chiffreAffaires>
+        <site url="http://www.puma.com" />
+    </marque>
+    
+    <marque nom="Louboutin">
+        <anneeCreation>1992</anneeCreation>
+        <origine>France</origine>
+        <fondateur>Christian Louboutin</fondateur>
+        <chiffreAffaires unite="euros">15580000</chiffreAffaires>
+        <site url="https://eu.christianlouboutin.com/" />    
+    </marque>
+    
+    <collection>
+            <chaussure marque ="Nike">
+                <nom>Air Jordan 1</nom>
+                <anneeSortie>1985</anneeSortie>
+                <prix>150.00</prix>
+                <image src="img/air_jordan1.jpg"></image>
+                <stock>
+                    <taille quantite="15">45</taille>
+                </stock>
+            </chaussure>
+        
+            <chaussure>
+                <nom>Air Max Plus III AMP</nom>
+                <anneeSortie>1985</anneeSortie>
+                <prix>179.99</prix>
+                <image src="img/air_max_plus_3_amp.jpg"></image>
+            </chaussure>
+        
+        
+    </collection>
+</catalogue>
