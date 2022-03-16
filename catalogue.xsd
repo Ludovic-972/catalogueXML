@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="catalogue">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="marques" type="typeMarque"></xs:element>
+                <xs:element name="collection" type="typeCollection"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <!-- Element marque -->
+    <xs:complexType name="typeMarque">
+            <xs:sequence>
+                <xs:element name="marque" type="typeLaMarque"></xs:element>
+            </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="typeLaMarque">
+        <xs:sequence>
+            <xs:element name="anneeCreation" type="xs:int"></xs:element>
+            <xs:element name="origine" type="xs:string"></xs:element>
+            <xs:element name="fondateur" type="xs:string"></xs:element>
+            <xs:element name="slogan" type="xs:string"></xs:element>
+            <xs:element name="chiffreAffaires"></xs:element>
+            <xs:element name="site"></xs:element>
+        </xs:sequence>
+        <xs:attribute name="nom" type="xs:string" use="required"></xs:attribute>
+    </xs:complexType>
+            
+    <xs:attribute name="unite">
+        <xs:simpleType>
+            <xs:restriction base="xs:string"></xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="url">
+        <xs:simpleType>
+            <xs:restriction base="xs:string"></xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+    
+    <!-- Element Catalogue -->
+    <xs:complexType name="typeCollection">
+        <xs:sequence>
+            <xs:element name="chaussure" type="typeChaussure"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- Element Chaussure -->
+    <xs:complexType name="typeChaussure">
+        <xs:sequence>
+            <xs:element name="nom" type="xs:string"></xs:element>
+            <xs:element name="anneeSortie" type="xs:int"></xs:element>
+            <xs:element name="prix" type="xs:int"></xs:element>
+            <xs:element name="stock" type="typeStock"></xs:element>
+        </xs:sequence>
+        <xs:attribute name="marque" type="xs:string"></xs:attribute>
+    </xs:complexType>
+    
+    <!-- Element stock -->
+    <xs:complexType name="typeStock">
+        <xs:sequence>
+            <xs:element name="taille"></xs:element>
+        </xs:sequence>
+        <xs:attribute name="quantite">
+            <xs:simpleType>
+                <xs:restriction base="xs:int"></xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+</xs:schema>
