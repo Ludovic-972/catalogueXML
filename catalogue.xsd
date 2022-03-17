@@ -12,14 +12,14 @@
     <!-- Element marque -->
     <xs:complexType name="typeMarque">
             <xs:sequence>
-                <xs:element name="marque" type="typeLaMarque"></xs:element>
+                <xs:element name="marque" type="typeLaMarque" maxOccurs="unbounded"></xs:element>
             </xs:sequence>
     </xs:complexType>
     <xs:complexType name="typeLaMarque">
         <xs:sequence>
             <xs:element name="anneeCreation" type="xs:int"></xs:element>
             <xs:element name="origine" type="xs:string"></xs:element>
-            <xs:element name="fondateur" type="xs:string"></xs:element>
+            <xs:element name="fondateur" type="xs:string" maxOccurs="unbounded"></xs:element>
             <xs:element name="slogan" type="xs:string"></xs:element>
             <xs:element name="chiffreAffaires"></xs:element>
             <xs:element name="site"></xs:element>
@@ -41,7 +41,7 @@
     <!-- Element Catalogue -->
     <xs:complexType name="typeCollection">
         <xs:sequence>
-            <xs:element name="chaussure" type="typeChaussure"></xs:element>
+            <xs:element name="chaussure" type="typeChaussure" maxOccurs="unbounded"></xs:element>
         </xs:sequence>
     </xs:complexType>
     
@@ -59,7 +59,7 @@
     <!-- Element stock -->
     <xs:complexType name="typeStock">
         <xs:sequence>
-            <xs:element name="taille"></xs:element>
+            <xs:element name="taille" maxOccurs="unbounded"></xs:element>
         </xs:sequence>
         <xs:attribute name="quantite">
             <xs:simpleType>
