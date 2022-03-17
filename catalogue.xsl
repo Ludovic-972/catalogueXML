@@ -25,7 +25,7 @@
             
             <table id="catalogue" border="1">
                 <tr>
-                    <th>Photo</th>
+                    <th>Chaussure</th>
                     <th>Prix (en &#8364;)</th>
                     <th>Matiere</th>
                     <th>Couleurs</th>
