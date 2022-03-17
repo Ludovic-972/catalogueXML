@@ -11,9 +11,6 @@
             <link rel="stylesheet" href="style.css"/>
         </head>
         <body>
-            <div id="titre">
-                <h1>Catalogue de chaussures</h1>
-            </div>
             <div id="header">
             <table border="1">
                     <tr>
@@ -22,12 +19,8 @@
                         </xsl:for-each>
                     </tr>
                 </table>
-                 <div class="searchbar">
-                     <form action="">
-                         <input type="text" placeholder="Rechercher" name="search"/>
-                         <button class="button" type="submit"><i class="fa fa-search"></i></button>
-                     </form>
-                  </div>
+                <div id="searchbar"><input type="text"/><button>Recherche</button></div>
+            </div>
                 <br/><br/>
             
             <table id="catalogue" border="1">
