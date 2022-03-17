@@ -1,86 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <catalogue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:noNamespaceSchemaLocation="catalogue.xsd">
-    <marques>
-        <marque nom="Nike">
-            <anneeCreation>1971</anneeCreation>
-            <origine>USA</origine>
-            <fondateur>William J. Bowerman et Philip H. Knight</fondateur>
-            <slogan>Just do it</slogan>
-            <chiffreAffaires unite="euros">10400000000</chiffreAffaires>
-            <site url="http://www.nike.com" />
-        </marque>    
-        <marque nom="Adidas">
-            <anneeCreation>1949</anneeCreation>
-            <origine>Allemagne</origine>
-            <fondateur>Adolf Dassler</fondateur>
-            <slogan>Adidas is all in</slogan>
-            <chiffreAffaires unite="euros">5550000000</chiffreAffaires>
-            <site url="http://www.adidas.com" />
-        </marque>   
-        <marque nom="Converse">
-            <anneeCreation>1908</anneeCreation>
-            <origine>USA</origine>
-            <fondateur>Marquis Mills Converse</fondateur>
-            <slogan>All Stars</slogan>
-            <chiffreAffaires unite="euros">9401400</chiffreAffaires>
-            <site url="www.converse.com" />
-        </marque>  
-        <marque nom="Puma"> 
-            <anneeCreation>1948</anneeCreation>
-            <origine>Allemagne</origine>
-            <fondateur>Rudolf Dassler</fondateur>
-            <slogan>Forever Faster</slogan>
-            <chiffreAffaires unite="euros">5234000000</chiffreAffaires>
-            <site url="http://www.puma.com" />
-        </marque>   
-        <marque nom="Louboutin">
-            <anneeCreation>1992</anneeCreation>
-            <origine>France</origine>
-            <fondateur>Christian Louboutin</fondateur>
-            <slogan></slogan>
-            <chiffreAffaires unite="euros">15580000</chiffreAffaires>
-            <site url="https://eu.christianlouboutin.com/" />    
-        </marque>
-    </marques>
+    xsi:noNamespaceSchemaLocation="catalogue.xsd">
+    
+    <marque nomMarque="Nike">
+        <anneeCreation>1971</anneeCreation>
+        <origine>USA</origine>
+        <fondateur>William J. Bowerman</fondateur>
+        <fondateur>Philip H. Knight</fondateur>
+        <slogan>Just do it</slogan>
+        <chiffreAffaires unite="euros">10400000000</chiffreAffaires>
+        <site url="http://www.nike.com" />
+    </marque>
+    
+    <marque nomMarque="Adidas">
+        <anneeCreation>1949</anneeCreation>
+        <origine>Allemagne</origine>
+        <fondateur>Adolf Dassler</fondateur>
+        <slogan>Adidas is all in</slogan>
+        <chiffreAffaires unite="euros">5550000000</chiffreAffaires>
+        <site url="http://www.adidas.com" />
+    </marque>
+    
+    <marque nomMarque="Converse">
+        <anneeCreation>1908</anneeCreation>
+        <origine>USA</origine>
+        <fondateur>Marquis Mills Converse</fondateur>
+        <slogan>All Stars</slogan>
+        <chiffreAffaires unite="euros">9401400</chiffreAffaires>
+        <site url="www.converse.com" />
+    </marque>
+    
+   
+    <marque nomMarque="Puma"> 
+        <anneeCreation>1948</anneeCreation>
+        <origine>Allemagne</origine>
+        <fondateur>Rudolf Dassler</fondateur>
+        <slogan>Forever Faster</slogan>
+        <chiffreAffaires unite="euros">5234000000</chiffreAffaires>
+        <site url="http://www.puma.com" />
+    </marque>
+    
+    <marque nomMarque="Louboutin">
+        <anneeCreation>1992</anneeCreation>
+        <origine>France</origine>
+        <fondateur>Christian Louboutin</fondateur>
+        <chiffreAffaires unite="euros">15580000</chiffreAffaires>
+        <site url="https://eu.christianlouboutin.com/" />    
+    </marque>
     
     <collection>
-        <chaussure marque ="Nike">
-            <nom>Air Jordan 1</nom>
-            <anneeSortie>1985</anneeSortie>
-            <prix>150</prix>
+            <chaussure nomMarque="Nike">
+                <nom>Air Jordan 1</nom>
+                <prix>150.00</prix>
+                <image src="img/air_jordan1.jpg"></image>
+                <matiere>Cuir</matiere>
+                <stock>
+                    <couleur nom="noir">
+                        <taille quantite="15">45</taille>
+                    </couleur>
+                </stock>
+            </chaussure> 
+        
+             <chaussure nomMarque="Nike">
+                <nom>Air Max Plus III AMP</nom>
+                <prix>179.99</prix>
+                <image src="img/air_max_plus_3_amp.jpg"/>
+                 <matiere>Cuir</matiere>
+                <stock>
+                    <couleur nom="rouge">
+                        <taille quantite="8">37</taille>
+                    </couleur>
+                </stock>  
+            </chaussure>
+        
+        <chaussure nomMarque="Louboutin">
+            <nom>Escarpins Kate 85</nom>
+            <prix>575</prix>
+            <image src=""></image>
+            <matiere></matiere>
             <stock>
-                <taille quantite="15">45</taille>
+                <couleur nom="">
+                    <taille quantite="6">36</taille>
+                    <taille quantite="10">38</taille>
+                    <taille quantite="8">40</taille>
+                </couleur>
+            </stock>
+        </chaussure>
+        <chaussure nomMarque="Louboutin">
+            <nom>So Eleonor</nom>
+            <prix>845</prix>
+            <image src=""/>
+            <matiere></matiere>
+            <stock>
+                <couleur nom="">
+                    <taille quantite="11">38</taille>
+                </couleur>
+            </stock>
+        </chaussure>
+        <chaussure nomMarque="Converse">
+            <nom>Chuck Taylor All Star Classic</nom>
+            <prix>70</prix>
+            <image src=""/>
+            <matiere></matiere>
+            <stock>
+                <couleur nom="">
+                    <taille quantite="20">41</taille>
+                </couleur>
             </stock>
         </chaussure>
         
-       <chaussure marque="Louboutin">
-            <nom>Escarpins Kate 85</nom>
-            <anneeSortie>2019</anneeSortie>
-            <prix>575</prix>
-            <stock>
-                <taille quantite="6">36</taille>
-                <taille quantite="10">38</taille>
-                <taille quantite="8">40</taille>
-            </stock>
-        </chaussure>
-        <chaussure marque="Louboutin">
-            <nom>So Eleonor</nom>
-            <anneeSortie>2021</anneeSortie>
-            <prix>845</prix>
-            <stock>
-                <taille quantite="11">38</taille>
-            </stock>
-        </chaussure>
-        <chaussure marque="Converse">
-            <nom>Chuck Taylor All Star Classic</nom>
-            <anneeSortie>1922</anneeSortie>
-            <prix>70</prix>
-            <stock>
-                <taille quantite="20">41</taille>
-            </stock>
-        </chaussure>
         
     </collection>
 </catalogue>

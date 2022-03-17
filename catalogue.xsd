@@ -3,68 +3,119 @@
     <xs:element name="catalogue">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="marques" type="typeMarque"></xs:element>
-                <xs:element name="collection" type="typeCollection"></xs:element>
+                <xs:element ref="marque" minOccurs="1" maxOccurs="unbounded"></xs:element>
+                <xs:element ref="collection" maxOccurs="1"></xs:element>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
     
-    <!-- Element marque -->
-    <xs:complexType name="typeMarque">
+    <xs:element name="marque">
+        <xs:complexType>
+             <xs:sequence>
+                 <xs:element name="anneeCreation" type="xs:gYear" minOccurs="1" maxOccurs="1"/>
+                 <xs:element name="origine" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                 <xs:element name="fondateur" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+                 <xs:element name="slogan" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                 <xs:element ref="chiffreAffaires" minOccurs="1" maxOccurs="1"/>
+                 <xs:element ref="site" minOccurs="1" maxOccurs="1"/>
+             </xs:sequence>
+             <xs:attribute ref="nomMarque"  use="required" />
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="chiffreAffaires">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:long">
+                    <xs:attribute name="unite" type="xs:string" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:attribute name="nomMarque">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Nike"/>
+                <xs:enumeration value="Adidas"/>
+                <xs:enumeration value="Converse"/>
+                <xs:enumeration value="Puma"/>
+                <xs:enumeration value="Louboutin"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+    
+    <xs:element name="site">
+        <xs:complexType>
+            <xs:attribute name="url" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="collection">
+        <xs:complexType>
             <xs:sequence>
-                <xs:element name="marque" type="typeLaMarque" maxOccurs="unbounded"></xs:element>
+                <xs:element ref="chaussure" minOccurs="0" maxOccurs="unbounded"/>
             </xs:sequence>
-    </xs:complexType>
-    <xs:complexType name="typeLaMarque">
-        <xs:sequence>
-            <xs:element name="anneeCreation" type="xs:int"></xs:element>
-            <xs:element name="origine" type="xs:string"></xs:element>
-            <xs:element name="fondateur" type="xs:string" maxOccurs="unbounded"></xs:element>
-            <xs:element name="slogan" type="xs:string"></xs:element>
-            <xs:element name="chiffreAffaires"></xs:element>
-            <xs:element name="site"></xs:element>
-        </xs:sequence>
-        <xs:attribute name="nom" type="xs:string" use="required"></xs:attribute>
-    </xs:complexType>
-            
-    <xs:attribute name="unite">
-        <xs:simpleType>
-            <xs:restriction base="xs:string"></xs:restriction>
-        </xs:simpleType>
-    </xs:attribute>
-    <xs:attribute name="url">
-        <xs:simpleType>
-            <xs:restriction base="xs:string"></xs:restriction>
-        </xs:simpleType>
-    </xs:attribute>
+        </xs:complexType>
+    </xs:element>
     
-    <!-- Element Catalogue -->
-    <xs:complexType name="typeCollection">
-        <xs:sequence>
-            <xs:element name="chaussure" type="typeChaussure" maxOccurs="unbounded"></xs:element>
-        </xs:sequence>
+    <xs:element name="chaussure">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nom" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="prix" type="xs:double" minOccurs="1" maxOccurs="1" />
+                <xs:element ref="image" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="matiere" minOccurs="1" maxOccurs="1"/>
+                <xs:element ref="stock" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+            <xs:attribute ref="nomMarque" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="image">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="src" type="xs:string" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="stock">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="couleur" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="couleur">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="taille" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="nom" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="taille">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:restriction base="sizeType">
+                    <xs:minInclusive value="35"/>
+                    <xs:maxInclusive value="50"/>
+                </xs:restriction>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:complexType name="sizeType">
+        <xs:simpleContent>
+            <xs:extension base="xs:int">
+                <xs:attribute name="quantite" type="xs:int" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
     </xs:complexType>
     
-    <!-- Element Chaussure -->
-    <xs:complexType name="typeChaussure">
-        <xs:sequence>
-            <xs:element name="nom" type="xs:string"></xs:element>
-            <xs:element name="anneeSortie" type="xs:int"></xs:element>
-            <xs:element name="prix" type="xs:int"></xs:element>
-            <xs:element name="stock" type="typeStock"></xs:element>
-        </xs:sequence>
-        <xs:attribute name="marque" type="xs:string"></xs:attribute>
-    </xs:complexType>
-    
-    <!-- Element stock -->
-    <xs:complexType name="typeStock">
-        <xs:sequence>
-            <xs:element name="taille" maxOccurs="unbounded"></xs:element>
-        </xs:sequence>
-        <xs:attribute name="quantite">
-            <xs:simpleType>
-                <xs:restriction base="xs:int"></xs:restriction>
-            </xs:simpleType>
-        </xs:attribute>
-    </xs:complexType>
 </xs:schema>
