@@ -2,6 +2,11 @@
     width: 100%;
 }
 
+#titre{
+    text-align:center;
+    color:rgb(33, 43, 43);
+}
+
 #catalogue td {
    width:18%;
 }
@@ -21,4 +26,62 @@
 img{
     max-width: 100%;
 	height: auto;
+}
+
+<!--le tableau-->
+
+
+body{
+	font-family:'Source Sans Pro', sans-serif;
+	margin:0;
+	background-color: rgb(226, 240, 240);
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin:0;
+}
+
+#catalogue {
+	max-width: 1000px;
+	margin-right:auto;
+	margin-left:auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-height:100vh;
+	width:100%;
+	border:1px solid;
+}
+
+#catalogue th {
+	display:flex;
+	width:100%;
+	background:#000;
+    color:white;	
+}
+
+#catalogue tr{
+	display:flex;
+	width:100%;
+	
+}
+
+#catalogue td {
+	flex: 1 1 20%;
+}
+
+.searchbar form{
+    position: relative;
+}
+.searchbar form button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    background: transparent;
+    font-size: 20px;
+    color: #4b00ff;
+    cursor: pointer;
+    
 }
