@@ -11,6 +11,9 @@
             <link rel="stylesheet" href="style.css"/>
         </head>
         <body>
+            <div id="titre">
+                <h1>Catalogue de chaussures</h1>
+            </div>
             <div id="header">
             <table border="1">
                     <tr>
