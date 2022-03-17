@@ -65,7 +65,7 @@
                 <xs:element name="nom" type="xs:string" minOccurs="1" maxOccurs="1"/>
                 <xs:element name="prix" type="xs:double" minOccurs="1" maxOccurs="1" />
                 <xs:element ref="image" minOccurs="1" maxOccurs="1"/>
-                <xs:element name="matiere" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="matiere" minOccurs="1" maxOccurs="unbounded"/>
                 <xs:element ref="stock" minOccurs="1" maxOccurs="1"/>
             </xs:sequence>
             <xs:attribute ref="nomMarque" use="required"/>

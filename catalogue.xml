@@ -67,44 +67,49 @@
                 <prix>179.99</prix>
                 <image src="img/air_max_plus_3_amp.jpg"/>
                  <matiere>Cuir</matiere>
+                 <matiere>Mech</matiere> 
+                 <matiere>Caoutchouc</matiere>
+                 <matiere>Plastique</matiere>
                 <stock>
                     <couleur nom="rouge">
                         <taille quantite="8">37</taille>
                     </couleur>
-                </stock>  
+                </stock> 
             </chaussure>
         
         <chaussure nomMarque="Louboutin">
             <nom>Escarpins Kate 85</nom>
-            <prix>575</prix>
+            <prix>575.00</prix>
             <image src=""></image>
             <matiere></matiere>
             <stock>
-                <couleur nom="">
+                <couleur nom="rouge">
                     <taille quantite="6">36</taille>
                     <taille quantite="10">38</taille>
+                </couleur>
+                <couleur nom="blanc">
                     <taille quantite="8">40</taille>
                 </couleur>
             </stock>
         </chaussure>
         <chaussure nomMarque="Louboutin">
             <nom>So Eleonor</nom>
-            <prix>845</prix>
+            <prix>845.00</prix>
             <image src=""/>
             <matiere></matiere>
             <stock>
-                <couleur nom="">
+                <couleur nom="noir">
                     <taille quantite="11">38</taille>
                 </couleur>
             </stock>
         </chaussure>
         <chaussure nomMarque="Converse">
             <nom>Chuck Taylor All Star Classic</nom>
-            <prix>70</prix>
+            <prix>70.00</prix>
             <image src=""/>
             <matiere></matiere>
             <stock>
-                <couleur nom="">
+                <couleur nom="bleu">
                     <taille quantite="20">41</taille>
                 </couleur>
             </stock>
