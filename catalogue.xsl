@@ -19,8 +19,12 @@
                         </xsl:for-each>
                     </tr>
                 </table>
-                 <div id="searchbar"><input type="text"/><button>Recherche</button></div>
-            </div>
+                 <div class="searchbar">
+                     <form action="">
+                         <input type="text" placeholder="Rechercher" name="search"/>
+                         <button class="button" type="submit"><i class="fa fa-search"></i></button>
+                     </form>
+                  </div>
                 <br/><br/>
             
             <table id="catalogue" border="1">
