@@ -62,7 +62,7 @@
                             <ul>
                                 <xsl:for-each select="stock">
                                     <xsl:for-each select="couleur/taille">
-                                        <li>Taille <xsl:value-of select="current/text()"/> (<xsl:value-of select="@quantite"/> articles)</li>
+                                        <li>Taille <xsl:value-of select="current()/text()"/> (<xsl:value-of select="@quantite"/> articles)</li>
                                     </xsl:for-each>
                                 </xsl:for-each>
                                 
