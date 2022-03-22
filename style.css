@@ -1,12 +1,15 @@
 #header{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #catalogue td {
    width:18%;
 }
 #marques{
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px;
 }
 
 #marques:hover{
@@ -14,8 +17,7 @@
 }
 
 #searchbar{
-    display:flex;
-    justify-content:flex-end;
+
 }
 
 img{

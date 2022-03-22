@@ -12,7 +12,7 @@
         </head>
         <body>
             <div id="header">
-            <table border="1">
+                <table border="1">
                     <tr>
                         <xsl:for-each select="//marque">
                             <th id="marques"><xsl:value-of select="@nomMarque"/></th>

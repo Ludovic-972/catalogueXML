@@ -81,7 +81,7 @@
             <nom>Escarpins Kate 85</nom>
             <prix>575.00</prix>
             <image src=""></image>
-            <matiere></matiere>
+            <matiere>Cuir</matiere>
             <stock>
                 <couleur nom="rouge">
                     <taille quantite="6">36</taille>
@@ -96,7 +96,7 @@
             <nom>So Eleonor</nom>
             <prix>845.00</prix>
             <image src=""/>
-            <matiere></matiere>
+            <matiere>Cuir</matiere>
             <stock>
                 <couleur nom="noir">
                     <taille quantite="11">38</taille>
@@ -107,7 +107,7 @@
             <nom>Chuck Taylor All Star Classic</nom>
             <prix>70.00</prix>
             <image src=""/>
-            <matiere></matiere>
+            <matiere>Toile</matiere>
             <stock>
                 <couleur nom="bleu">
                     <taille quantite="20">41</taille>
