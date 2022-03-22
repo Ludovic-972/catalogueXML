@@ -65,7 +65,7 @@
              <chaussure nomMarque="Nike">
                 <nom>Air Max Plus III AMP</nom>
                 <prix>179.99</prix>
-                <image src="img/air_max_plus_3_amp.jpg"/>
+                 <image src="img/nike_air_max_plus_3_rouge.jpg"/>
                  <matiere>Cuir</matiere>
                  <matiere>Mech</matiere> 
                  <matiere>Caoutchouc</matiere>
@@ -80,7 +80,7 @@
         <chaussure nomMarque="Louboutin">
             <nom>Escarpins Kate 85</nom>
             <prix>575.00</prix>
-            <image src=""></image>
+            <image src="img/kate_85.jpg"></image>
             <matiere>Cuir</matiere>
             <stock>
                 <couleur nom="rouge">
@@ -95,7 +95,7 @@
         <chaussure nomMarque="Louboutin">
             <nom>So Eleonor</nom>
             <prix>845.00</prix>
-            <image src=""/>
+            <image src="img/so_eleonor.jpg"/>
             <matiere>Cuir</matiere>
             <stock>
                 <couleur nom="noir">
@@ -106,7 +106,7 @@
         <chaussure nomMarque="Converse">
             <nom>Chuck Taylor All Star Classic</nom>
             <prix>70.00</prix>
-            <image src=""/>
+            <image src="img/chuck_taylor_all_star.jpg"/>
             <matiere>Toile</matiere>
             <stock>
                 <couleur nom="bleu">
@@ -114,7 +114,100 @@
                 </couleur>
             </stock>
         </chaussure>
-        
+        <chaussure nomMarque="Adidas">
+            <nom>Stan smith</nom>
+            <prix>100.00</prix>
+            <image src="img/stan_smith.jpg"/>
+            <matiere>Primegreen</matiere>
+            <matiere>Caoutchouc</matiere>
+            <stock>
+                <couleur nom="blanc">
+                    <taille quantite="30">40</taille>
+                    <taille quantite="27">42</taille>
+                    <taille quantite="15">43</taille>
+                </couleur>
+            </stock>
+        </chaussure>
+        <chaussure nomMarque="Puma">
+            <nom>Suede</nom>
+            <prix>80.00</prix>
+            <image src="img/puma_suede.jpg"/>
+            <matiere>Suede</matiere>
+            <matiere>Caoutchouc</matiere>
+            <stock>
+                <couleur nom="noir">
+                    <taille quantite="12">39</taille>
+                    <taille quantite="25">42</taille>
+                </couleur>
+                <couleur nom="bleu">
+                    <taille quantite="20">40</taille>
+                </couleur>
+                <couleur nom="vert">
+                    <taille quantite="8">38</taille>
+                    <taille quantite="18">42</taille>
+                </couleur>
+            </stock>
+        </chaussure>
+        <chaussure nomMarque="Nike">
+            <nom>Air Max 90</nom>
+            <prix>130.00</prix>
+            <image src="img/air_max_90.jpg" />
+            <matiere>Cuir</matiere>
+            <matiere>Caoutchouc</matiere>
+            <stock>
+                <couleur nom="blanc">
+                    <taille quantite="50">40</taille>
+                    <taille quantite="30">41</taille>
+                    <taille quantite="25">42</taille>
+                    <taille quantite="35">43</taille>
+                    <taille quantite="10">44</taille>
+                </couleur>
+                <couleur nom="noir"></couleur>
+            </stock>
+        </chaussure>
+        <chaussure nomMarque="Nike">
+            <nom>Air Max 97</nom>
+            <prix>180.00</prix>
+            <image src="img/air_max_97.jpg" />
+            <matiere>Caoutchouc</matiere>
+            <matiere>Synthetique</matiere>
+            <matiere>Cuir</matiere>
+            <stock>
+                <couleur nom="noir">
+                    <taille quantite="30">39</taille>
+                    <taille quantite="25">40</taille>
+                    <taille quantite="35">42</taille>
+                    <taille quantite="7">45</taille>
+                </couleur>
+                <couleur nom="blanc"></couleur>
+            </stock>
+        </chaussure>
+        <chaussure nomMarque="Converse">
+            <nom>CONS One Star Pro</nom>
+            <prix>85.00</prix>
+            <image src="img/cons-one-star-pro.jpg" />
+            <matiere>Daim</matiere>
+            <matiere>Caoutchouc</matiere>
+            <stock>
+                <couleur nom="noir">
+                    <taille quantite="20">40</taille>
+                    <taille quantite="30">42</taille>
+                </couleur>
+            </stock>
+        </chaussure>
+        <chaussure nomMarque="Puma">
+            <nom>CA Pro Classic</nom>
+            <prix>90.00</prix>
+            <image src="img/ca_pro_classic.jpg" />
+            <matiere>Cuir</matiere>
+            <matiere>Caoutchouc</matiere>
+            <stock>
+                <couleur nom="blanc">
+                    <taille quantite="15">39</taille>
+                </couleur>
+                <couleur nom="noir"></couleur>
+            </stock>
+        </chaussure>
         
     </collection>
 </catalogue>

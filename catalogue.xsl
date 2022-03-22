@@ -34,12 +34,13 @@
                 </tr>
                 <xsl:for-each select="//chaussure">
                     <tr>
-                        <td><img>
+                        <td>
+                        <xsl:value-of select="nom"/>
+                        <img>
                             <xsl:attribute name="src">
                                 <xsl:value-of select='image/@src'/>
                             </xsl:attribute>
                         </img><br/>
-                        <xsl:value-of select="nom"/>
                         </td>
                         <td>
                             <xsl:value-of select="prix"/>
