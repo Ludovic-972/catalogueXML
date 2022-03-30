@@ -8,16 +8,17 @@
 #catalogue td {
    width:18%;
 }
-#marques{
+.marqueHeader{
     padding: 10px 20px;
 }
 
-#marques:hover{
+.marqueHeader:hover{
     color:red;
 }
 
-#searchbar{
-
+#searchbox{
+    display : flex;
+    flex-direction:column;
 }
 
 img{

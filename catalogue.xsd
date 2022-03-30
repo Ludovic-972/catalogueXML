@@ -95,7 +95,7 @@
             <xs:sequence>
                 <xs:element ref="taille" minOccurs="0" maxOccurs="unbounded"/>
             </xs:sequence>
-            <xs:attribute name="nom" use="required"/>
+            <xs:attribute name="nomCouleur" use="required"/>
         </xs:complexType>
     </xs:element>
     

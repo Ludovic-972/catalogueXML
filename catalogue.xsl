@@ -15,11 +15,71 @@
                 <table border="1">
                     <tr>
                         <xsl:for-each select="//marque">
-                            <th id="marques"><xsl:value-of select="@nomMarque"/></th>
+                            <th class="marqueHeader"><xsl:value-of select="@nomMarque"/></th>
                         </xsl:for-each>
                     </tr>
                 </table>
-                <div id="searchbar"><input type="text"/><button>Recherche</button></div>
+                <div id="searchbox">
+                    <label for="marque">Marque : 
+                        <select id="marque">
+                            <option value=""></option>
+                            <xsl:for-each select="//marque">
+                                <option>
+                                    <xsl:attribute name="value">
+                                        <xsl:value-of select="@nomMarque"/>
+                                    </xsl:attribute>
+                                    <xsl:value-of select="@nomMarque"/>
+                                </option>
+                            </xsl:for-each>  
+                        </select>
+                    </label>
+                    
+                    <label for="couleur">Couleur : 
+                        <select id="couleur">
+                            <option value=""></option>
+                            <xsl:for-each select="//couleur[not(@nomCouleur=preceding::couleur/@nomCouleur)]">
+                                <option>
+                                    <xsl:attribute name="value">
+                                        <xsl:value-of select="upper-case(@nomCouleur)"/>
+                                    </xsl:attribute>
+                                    <xsl:value-of select="upper-case(@nomCouleur)"/>
+                                </option>
+                            </xsl:for-each>  
+                        </select>
+                    </label>
+                    
+                    <label for="matiere">Matière : 
+                        <select id="matiere">
+                            <option value=""></option>
+                            <xsl:for-each select="//matiere[not(text()=preceding::matiere/text())]">
+                                <option>
+                                    <xsl:attribute name="value">
+                                        <xsl:value-of select="upper-case(current()/text())"/>
+                                    </xsl:attribute>
+                                    <xsl:value-of select="upper-case(current()/text())"/>
+                                </option>
+                            </xsl:for-each>  
+                        </select>
+                    </label>
+                    
+                    <label for="taille">
+                        Taille :<input id="taille" type="number" min="30" max="47"/>
+                    </label>
+                    
+                    <label for="prixMax">
+                        Prix maximum:
+                        <input id="prixMax" type="number" onchange="watch()">
+                            <xsl:attribute name="min">
+                                <xsl:value-of select="//chaussure[prix = min(//chaussure/prix)]/prix"/>
+                            </xsl:attribute>
+                            <xsl:attribute name="max">
+                                <xsl:value-of select="//chaussure[prix = max(//chaussure/prix)]/prix"/>
+                            </xsl:attribute>
+                        </input>
+                    </label>
+                    
+                    <button id="searchButton" onclick="search()">Recherche</button>
+                </div>
             </div>
                 <br/><br/>
             
@@ -55,7 +115,7 @@
                         <td>
                             <ul>
                             <xsl:for-each select="stock/couleur">
-                                <li><xsl:value-of select="upper-case(@nom)"/></li>
+                                <li><xsl:value-of select="upper-case(@nomCouleur)"/></li>
                             </xsl:for-each>
                             </ul>
                         </td>
@@ -76,9 +136,12 @@
                 </xsl:for-each>
             </table>
             
+            <script src="script.js">&#160;</script>
+            
         </body>
         
     </xsl:template>
     
+
     
 </xsl:stylesheet>

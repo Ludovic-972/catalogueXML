@@ -56,7 +56,7 @@
                 <image src="img/air_jordan1.jpg"></image>
                 <matiere>Cuir</matiere>
                 <stock>
-                    <couleur nom="noir">
+                    <couleur nomCouleur="noir">
                         <taille quantite="15">45</taille>
                     </couleur>
                 </stock>
@@ -71,7 +71,7 @@
                  <matiere>Caoutchouc</matiere>
                  <matiere>Plastique</matiere>
                 <stock>
-                    <couleur nom="rouge">
+                    <couleur nomCouleur="rouge">
                         <taille quantite="8">37</taille>
                     </couleur>
                 </stock> 
@@ -83,11 +83,11 @@
             <image src="img/kate_85.jpg"></image>
             <matiere>Cuir</matiere>
             <stock>
-                <couleur nom="rouge">
+                <couleur nomCouleur="rouge">
                     <taille quantite="6">36</taille>
                     <taille quantite="10">38</taille>
                 </couleur>
-                <couleur nom="blanc">
+                <couleur nomCouleur="blanc">
                     <taille quantite="8">40</taille>
                 </couleur>
             </stock>
@@ -98,7 +98,7 @@
             <image src="img/so_eleonor.jpg"/>
             <matiere>Cuir</matiere>
             <stock>
-                <couleur nom="noir">
+                <couleur nomCouleur="noir">
                     <taille quantite="11">38</taille>
                 </couleur>
             </stock>
@@ -109,7 +109,7 @@
             <image src="img/chuck_taylor_all_star.jpg"/>
             <matiere>Toile</matiere>
             <stock>
-                <couleur nom="bleu">
+                <couleur nomCouleur="bleu">
                     <taille quantite="20">41</taille>
                 </couleur>
             </stock>
@@ -121,7 +121,7 @@
             <matiere>Primegreen</matiere>
             <matiere>Caoutchouc</matiere>
             <stock>
-                <couleur nom="blanc">
+                <couleur nomCouleur="blanc">
                     <taille quantite="30">40</taille>
                     <taille quantite="27">42</taille>
                     <taille quantite="15">43</taille>
@@ -135,14 +135,14 @@
             <matiere>Suede</matiere>
             <matiere>Caoutchouc</matiere>
             <stock>
-                <couleur nom="noir">
+                <couleur nomCouleur="noir">
                     <taille quantite="12">39</taille>
                     <taille quantite="25">42</taille>
                 </couleur>
-                <couleur nom="bleu">
+                <couleur nomCouleur="bleu">
                     <taille quantite="20">40</taille>
                 </couleur>
-                <couleur nom="vert">
+                <couleur nomCouleur="vert">
                     <taille quantite="8">38</taille>
                     <taille quantite="18">42</taille>
                 </couleur>
@@ -155,14 +155,14 @@
             <matiere>Cuir</matiere>
             <matiere>Caoutchouc</matiere>
             <stock>
-                <couleur nom="blanc">
+                <couleur nomCouleur="blanc">
                     <taille quantite="50">40</taille>
                     <taille quantite="30">41</taille>
                     <taille quantite="25">42</taille>
                     <taille quantite="35">43</taille>
                     <taille quantite="10">44</taille>
                 </couleur>
-                <couleur nom="noir"></couleur>
+                <couleur nomCouleur="noir"></couleur>
             </stock>
         </chaussure>
         <chaussure nomMarque="Nike">
@@ -173,13 +173,13 @@
             <matiere>Synthetique</matiere>
             <matiere>Cuir</matiere>
             <stock>
-                <couleur nom="noir">
+                <couleur nomCouleur="noir">
                     <taille quantite="30">39</taille>
                     <taille quantite="25">40</taille>
                     <taille quantite="35">42</taille>
                     <taille quantite="7">45</taille>
                 </couleur>
-                <couleur nom="blanc"></couleur>
+                <couleur nomCouleur="blanc"></couleur>
             </stock>
         </chaussure>
         <chaussure nomMarque="Converse">
@@ -189,7 +189,7 @@
             <matiere>Daim</matiere>
             <matiere>Caoutchouc</matiere>
             <stock>
-                <couleur nom="noir">
+                <couleur nomCouleur="noir">
                     <taille quantite="20">40</taille>
                     <taille quantite="30">42</taille>
                 </couleur>
@@ -202,10 +202,10 @@
             <matiere>Cuir</matiere>
             <matiere>Caoutchouc</matiere>
             <stock>
-                <couleur nom="blanc">
+                <couleur nomCouleur="blanc">
                     <taille quantite="15">39</taille>
                 </couleur>
-                <couleur nom="noir"></couleur>
+                <couleur nomCouleur="noir"></couleur>
             </stock>
         </chaussure>
         
