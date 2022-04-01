@@ -31,7 +31,7 @@
         <site url="www.converse.com" />
     </marque>
     
-   
+    
     <marque nomMarque="Puma"> 
         <anneeCreation>1948</anneeCreation>
         <origine>Allemagne</origine>
@@ -50,32 +50,32 @@
     </marque>
     
     <collection>
-            <chaussure nomMarque="Nike">
-                <nom>Air Jordan 1</nom>
-                <prix>150.00</prix>
-                <image src="img/air_jordan1.jpg"></image>
-                <matiere>Cuir</matiere>
-                <stock>
-                    <couleur nomCouleur="noir">
-                        <taille quantite="15">45</taille>
-                    </couleur>
-                </stock>
-            </chaussure> 
+        <chaussure nomMarque="Nike">
+            <nom>Air Jordan 1</nom>
+            <prix>150.00</prix>
+            <image src="img/air_jordan1.jpg"></image>
+            <matiere>Cuir</matiere>
+            <stock>
+                <couleur nomCouleur="noir">
+                    <taille quantite="15">45</taille>
+                </couleur>
+            </stock>
+        </chaussure> 
         
-             <chaussure nomMarque="Nike">
-                <nom>Air Max Plus III AMP</nom>
-                <prix>179.99</prix>
-                 <image src="img/nike_air_max_plus_3_rouge.jpg"/>
-                 <matiere>Cuir</matiere>
-                 <matiere>Mech</matiere> 
-                 <matiere>Caoutchouc</matiere>
-                 <matiere>Plastique</matiere>
-                <stock>
-                    <couleur nomCouleur="rouge">
-                        <taille quantite="8">37</taille>
-                    </couleur>
-                </stock> 
-            </chaussure>
+        <chaussure nomMarque="Nike">
+            <nom>Air Max Plus III AMP</nom>
+            <prix>179.99</prix>
+            <image src="img/nike_air_max_plus_3_rouge.jpg"/>
+            <matiere>Cuir</matiere>
+            <matiere>Mech</matiere> 
+            <matiere>Caoutchouc</matiere>
+            <matiere>Plastique</matiere>
+            <stock>
+                <couleur nomCouleur="rouge">
+                    <taille quantite="8">37</taille>
+                </couleur>
+            </stock> 
+        </chaussure>
         
         <chaussure nomMarque="Louboutin">
             <nom>Escarpins Kate 85</nom>
@@ -208,6 +208,519 @@
                 <couleur nomCouleur="noir"></couleur>
             </stock>
         </chaussure>
-        
+        <chaussure nomMarque="Converse">
+            <nom>Chuck 70 Vintage Canvas</nom>
+            <prix>90.00</prix>
+            <image src="img/chuck_70_vintage_canvas.jpg"></image>
+            <matiere>Toile (polyester 100% recyclé)</matiere>
+            <stock>
+                <couleur nomCouleur="rose">
+                    <taille quantite="15">40</taille>
+                    <taille quantite="18">41</taille>
+                    <taille quantite="20">44</taille>
+                    <taille quantite="17">45</taille>
+                </couleur>
+                <couleur nomCouleur="noir">
+                    <taille quantite="16">40</taille>
+                    <taille quantite="12">41</taille>
+                    <taille quantite="16">44</taille>
+                    <taille quantite="3">45</taille>
+                </couleur>
+                <couleur nomCouleur="oxyde d'indigo">
+                    <taille quantite="10">39</taille>
+                    <taille quantite="8">40</taille>
+                    <taille quantite="14">41</taille>
+                </couleur>
+                <couleur nomCouleur="gris">
+                    <taille quantite="16">39</taille>
+                    <taille quantite="22">41</taille>
+                    <taille quantite="10">45</taille>
+                    <taille quantite="3">46</taille>
+                </couleur>
+                <couleur nomCouleur="papyrus (rose/beige pâle)">
+                    <taille quantite="30">40</taille>
+                    <taille quantite="19">41</taille>
+                </couleur>
+            </stock>
+        </chaussure>
+        <chaussure nomMarque="Converse">
+            <nom>Custom Run Star Hike By You</nom>
+            <prix>130.00</prix>
+            <image src="img/custom_run_star_hike_by_you.png"></image>
+            <matiere>Toile</matiere>
+            <matiere>Denim prenium</matiere>
+            <stock>
+                <couleur nomCouleur="vert d'eau">
+                    <taille quantite="13">36</taille>
+                    <taille quantite="18">37</taille>
+                    <taille quantite="19">38</taille>
+                    <taille quantite="23">40</taille>
+                </couleur>
+                <couleur nomCouleur="noir">
+                    <taille quantite="14">38</taille>
+                    <taille quantite="15">40</taille>
+                </couleur>
+                <couleur nomCouleur="rose et bleu">
+                    <taille quantite="4">36</taille>
+                    <taille quantite="10">37</taille>
+                    <taille quantite="19">41</taille>
+                </couleur>
+                <couleur nomCouleur="marron">
+                    <taille quantite="16">36</taille>
+                    <taille quantite="13">37</taille>
+                    <taille quantite="5">38</taille>
+                    <taille quantite="22">40</taille>
+                    <taille quantite="10">42</taille>
+                </couleur>
+            </stock>
+        </chaussure>
+        <chaussure nomMarque="Converse">
+            <nom>Run Star Motion</nom>
+            <prix>120.00</prix>
+            <image src="img/run_star_motion.jpg"></image>
+            <matiere>Toile</matiere>
+            <matiere>Caoutchouc</matiere>
+            <stock>
+                <couleur nomCouleur="noir">
+                    <taille quantite="10">39</taille>
+                    <taille quantite="14">37</taille>
+                    <taille quantite="20">41</taille>
+                    <taille quantite="13">44</taille>
+                </couleur>
+                <couleur nomCouleur="beige">
+                    <taille quantite="3">37</taille>
+                    <taille quantite="21">39</taille>
+                    <taille quantite="20">43</taille>
+                    <taille quantite="15">46</taille>
+                </couleur>
+                <couleur nomCouleur="blanc">
+                    <taille quantite="2">35</taille>
+                    <taille quantite="8">39</taille>
+                    <taille quantite="17">40</taille>
+                </couleur>
+            </stock>
+        </chaussure> 
+        <chaussure nomMarque="Converse">
+            <nom>Trek Chuck Taylor All Star</nom>
+            <prix>130.00</prix>
+            <image src="img/trek_chuck_taylor_all_star.jpg"></image>
+            <matiere>Toile</matiere>
+            <stock>
+                <couleur nomCouleur="noir">
+                    <taille quantite="1">35</taille>
+                    <taille quantite="17">36</taille>
+                    <taille quantite="20">39</taille>
+                    <taille quantite="5">40</taille>
+                    <taille quantite="27">41</taille>
+                    <taille quantite="19">42</taille>
+                    <taille quantite="12">44</taille>
+                    <taille quantite="18">45</taille>
+                </couleur>
+                <couleur nomCouleur="blanc">
+                    <taille quantite="8">35</taille>
+                    <taille quantite="3">36</taille>
+                    <taille quantite="18">39</taille>
+                    <taille quantite="22">40</taille>
+                    <taille quantite="6">41</taille>
+                    <taille quantite="14">42</taille>
+                    <taille quantite="17">44</taille>
+                    <taille quantite="21">45</taille>
+                    <taille quantite="2">46</taille>
+                </couleur>
+            </stock>
+        </chaussure>
+        <chaussure nomMarque="Louboutin">
+            <nom>Vieirissima Orlato</nom>
+            <prix>595.00</prix>
+            <image src="img/vieirissima.jpg"></image>
+            <matiere>Cuir de veau</matiere>
+            <matiere>Velour</matiere>
+            <matiere>Cuir Nappa</matiere>
+            <matiere>Gomme blanche</matiere>
+            <stock>
+                <couleur nomCouleur="bleu">
+                    <taille quantite="8">35</taille>
+                    <taille quantite="3">36</taille>
+                    <taille quantite="7">37</taille>
+                    <taille quantite="2">39</taille>
+                    <taille quantite="4">40</taille>
+                </couleur>
+                <couleur nomCouleur="noir">
+                    <taille quantite="8">35</taille>
+                    <taille quantite="3">36</taille>
+                    <taille quantite="7">37</taille>
+                    <taille quantite="2">39</taille>
+                    <taille quantite="4">40</taille>
+                </couleur>
+                <couleur nomCouleur="gris">
+                    <taille quantite="8">35</taille>
+                    <taille quantite="3">36</taille>
+                    <taille quantite="7">37</taille>
+                    <taille quantite="2">39</taille>
+                    <taille quantite="4">40</taille>
+                </couleur>
+                <couleur nomCouleur="orange">
+                    <taille quantite="8">35</taille>
+                    <taille quantite="3">36</taille>
+                    <taille quantite="7">37</taille>
+                    <taille quantite="2">39</taille>
+                    <taille quantite="4">40</taille>
+                </couleur>
+                <couleur nomCouleur="rouge">
+                    <taille quantite="8">35</taille>
+                    <taille quantite="3">36</taille>
+                    <taille quantite="7">37</taille>
+                    <taille quantite="2">39</taille>
+                    <taille quantite="4">40</taille>
+                </couleur>
+                <couleur nomCouleur="tropical">
+                    <taille quantite="8">35</taille>
+                    <taille quantite="3">36</taille>
+                    <taille quantite="7">37</taille>
+                    <taille quantite="2">39</taille>
+                    <taille quantite="4">40</taille>
+                </couleur>
+                <couleur nomCouleur="arc-en-ciel">
+                    <taille quantite="8">35</taille>
+                    <taille quantite="3">36</taille>
+                    <taille quantite="7">37</taille>
+                    <taille quantite="2">39</taille>
+                    <taille quantite="4">40</taille>
+                </couleur>
+                <couleur nomCouleur="doré">
+                    <taille quantite="8">35</taille>
+                    <taille quantite="3">36</taille>
+                    <taille quantite="7">37</taille>
+                    <taille quantite="2">39</taille>
+                    <taille quantite="4">40</taille>
+                </couleur>
+                <couleur nomCouleur="léopard">
+                    <taille quantite="8">35</taille>
+                    <taille quantite="3">36</taille>
+                    <taille quantite="7">37</taille>
+                    <taille quantite="2">39</taille>
+                    <taille quantite="4">40</taille>
+                </couleur>
+            </stock>
+        </chaussure>
+        <chaussure nomMarque="Louboutin">
+            <nom>Riojana Spikes</nom>
+            <prix>695.00</prix>
+            <image src="img/riojana_spikes.jpg"></image>
+            <matiere>Cuir de veau verni</matiere>
+            <stock>
+                <couleur nomCouleur="noir">
+                    <taille quantite="9">35</taille>
+                    <taille quantite="13">36</taille>
+                    <taille quantite="10">37</taille>
+                    <taille quantite="7">38</taille>
+                    <taille quantite="11">39</taille>
+                    <taille quantite="9">40</taille>
+                    <taille quantite="3">41</taille>
+                </couleur>
+                <couleur nomCouleur="blanc">
+                    <taille quantite="11">35</taille>
+                    <taille quantite="12">36</taille>
+                    <taille quantite="8">37</taille>
+                    <taille quantite="4">38</taille>
+                    <taille quantite="14">39</taille>
+                    <taille quantite="2">40</taille>
+                    <taille quantite="6">41</taille>
+                </couleur>
+                <couleur nomCouleur="rouge">
+                    <taille quantite="5">35</taille>
+                    <taille quantite="2">36</taille>
+                    <taille quantite="3">37</taille>
+                    <taille quantite="8">38</taille>
+                    <taille quantite="12">39</taille>
+                    <taille quantite="10">40</taille>
+                    <taille quantite="8">41</taille>
+                </couleur>
+            </stock>
+        </chaussure>
+        <chaussure nomMarque="Adidas">
+            <nom>Chaussure Gazelle</nom>
+            <prix>95.00</prix>
+            <image src="img/chaussure_gazelle.png"></image>
+            <matiere>Nubuck</matiere>
+            <matiere>Cuir synthétique</matiere>
+            <matiere>Caoutchouc</matiere>
+            <stock>
+                <couleur nomCouleur="noir">
+                    <taille quantite="10">38</taille>
+                    <taille quantite="12">39</taille>
+                    <taille quantite="20">41</taille>
+                    <taille quantite="29">44</taille>
+                    <taille quantite="23">45</taille>
+                </couleur>
+                <couleur nomCouleur="blanc"><taille quantite="10">38</taille>
+                    <taille quantite="13">38</taille>
+                    <taille quantite="21">42</taille>
+                    <taille quantite="39">44</taille>
+                    <taille quantite="15">45</taille></couleur>
+                <couleur nomCouleur="beige">
+                    <taille quantite="9">38</taille>
+                    <taille quantite="21">39</taille>
+                    <taille quantite="20">42</taille>
+                    <taille quantite="15">45</taille>
+                    <taille quantite="17">46</taille>
+                </couleur>
+                <couleur nomCouleur="marron">
+                    <taille quantite="8">37</taille>
+                    <taille quantite="15">39</taille>
+                    <taille quantite="25">41</taille>
+                    <taille quantite="12">44</taille>
+                    <taille quantite="26">45</taille>
+                </couleur>
+                <couleur nomCouleur="rouge">
+                    <taille quantite="4">42</taille>
+                    <taille quantite="19">46</taille>
+                </couleur>
+            </stock>
+        </chaussure>
+        <chaussure nomMarque="Adidas">
+            <nom>Chaussure de VTT Five Ten Sleuth</nom>
+            <prix>90.00</prix>
+            <image src="img/chaussure_vtt_five.png"></image>
+            <matiere>Caoutchouc</matiere>
+            <matiere>Cuir</matiere>
+            <stock>
+                <couleur nomCouleur="noir">
+                    <taille quantite="12">41</taille>
+                    <taille quantite="14">44</taille>
+                    <taille quantite="23">45</taille>
+                    <taille quantite="21">47</taille>
+                    <taille quantite="4">49</taille>
+                </couleur>
+                <couleur nomCouleur="doré">
+                    <taille quantite="19">44</taille>
+                    <taille quantite="5">45</taille>
+                    <taille quantite="3">47</taille>
+                    <taille quantite="9">49</taille>
+                </couleur>
+                <couleur nomCouleur="blanc">
+                    <taille quantite="19">42</taille>
+                    <taille quantite="5">43</taille>
+                    <taille quantite="3">45</taille>
+                    <taille quantite="9">48</taille>
+                </couleur>
+            </stock>
+        </chaussure>
+        <chaussure nomMarque="Adidas">
+            <nom>Forum Low</nom>
+            <prix>100.00</prix>
+            <image src="img/forum_low.png"></image>
+            <matiere>Caoutchouc</matiere>
+            <matiere>Cuir</matiere>
+            <stock>
+                <couleur nomCouleur="bleu">
+                    <taille quantite="21">36</taille>
+                    <taille quantite="16">38</taille>
+                    <taille quantite="19">40</taille>
+                    <taille quantite="15">43</taille>
+                </couleur>
+                <couleur nomCouleur="blanc">
+                    <taille quantite="20">37</taille>
+                    <taille quantite="9">38</taille>
+                    <taille quantite="14">39</taille>
+                    <taille quantite="10">41</taille>
+                </couleur>
+                <couleur nomCouleur="jaune">
+                    <taille quantite="20">36</taille>
+                    <taille quantite="9">39</taille>
+                    <taille quantite="14">45</taille>
+                    <taille quantite="10">46</taille>
+                </couleur>
+            </stock>
+        </chaussure>
+        <chaussure nomMarque="Adidas">
+            <nom>Chaussure Advantage Base</nom>
+            <prix>60.00</prix>
+            <image src="img/advantage_base.png"></image>
+            <matiere>Synthétique</matiere>
+            <matiere>Caoutchouc</matiere>
+            <matiere>Textile</matiere>
+            <stock>
+                <couleur nomCouleur="blanc">
+                    <taille quantite="20">38</taille>
+                    <taille quantite="14">39</taille>
+                    <taille quantite="23">43</taille>
+                    <taille quantite="2">48</taille>
+                </couleur>
+                <couleur nomCouleur="noir">
+                    <taille quantite="5">38</taille>
+                    <taille quantite="9">39</taille>
+                    <taille quantite="8">43</taille>
+                    <taille quantite="6">48</taille>
+                </couleur>
+            </stock>
+        </chaussure>
+        <chaussure nomMarque="Puma">
+            <nom>Chaussure de sécurité Krypton Blue Mid</nom>
+            <prix>119.00</prix>
+            <image src="img/chaussure_securite_krypton.png"></image>
+            <matiere>Cuir</matiere>
+            <matiere>Verre</matiere>
+            <matiere>Nubuck</matiere>
+            <matiere>Caoutchouc</matiere>
+            <stock>
+                <couleur nomCouleur="bleu">
+                    <taille quantite="12">43</taille>
+                    <taille quantite="13">45</taille>
+                </couleur>
+            </stock>
+        </chaussure>
+        <chaussure nomMarque="Puma">
+            <nom>Basket Rider Play On</nom>
+            <prix>90.00</prix>
+            <image src="img/Basket-Rider-Play-On.png"></image>
+            <matiere>Nylon</matiere>
+            <matiere>Cuir velour</matiere>
+            <matiere>Cuir</matiere>
+            <stock>
+                <couleur nomCouleur="vert">
+                    <taille quantite="10">43</taille>
+                    <taille quantite="10">45</taille>
+                </couleur>
+                <couleur nomCouleur="bleu">
+                    <taille quantite="12">42</taille>
+                    <taille quantite="13">41</taille>
+                </couleur>
+                <couleur nomCouleur="corail">
+                    <taille quantite="15">41</taille>
+                    <taille quantite="15">40</taille>
+                </couleur>
+            </stock>
+        </chaussure>
+        <chaussure nomMarque="Puma">
+            <nom>X-Ray Millenium</nom>
+            <prix>80.00</prix>
+            <image src="img/Baskets-X-Ray-Millennium.png"></image>
+            <matiere></matiere>
+            <stock>
+                <couleur nomCouleur="noir">
+                    <taille quantite="10">39</taille>
+                    <taille quantite="11">43</taille>
+                    <taille quantite="12">48</taille>
+                </couleur>
+                <couleur nomCouleur="rouge">
+                    <taille quantite="9">40</taille>
+                    <taille quantite="14">44</taille>
+                    <taille quantite="15">47</taille>
+                </couleur>
+            </stock>
+        </chaussure>
+        <chaussure nomMarque="Puma">
+            <nom>R78 Runner</nom>
+            <prix>60.00</prix>
+            <image src="img/Basket-R78-Runner.png"></image>
+            <matiere>Nylon</matiere>
+            <matiere>Caoutchouc</matiere>
+            <matiere>Cuir velou synthétique</matiere>
+            <matiere>File</matiere>
+            <stock>
+                <couleur nomCouleur="bleu">
+                    <taille quantite="10">40</taille>
+                    <taille quantite="7">44</taille>
+                    <taille quantite="9">45</taille>
+                </couleur>
+                <couleur nomCouleur="rouge-jaune">
+                    <taille quantite="19">42</taille>
+                    <taille quantite="21">43</taille>
+                    <taille quantite="4">46</taille>
+                </couleur>
+                <couleur nomCouleur="noir-jaune-rouge">
+                    <taille quantite="9">40</taille>
+                    <taille quantite="14">44</taille>
+                    <taille quantite="15">47</taille>
+                </couleur>
+            </stock>
+        </chaussure>
+        <chaussure nomMarque="Puma">
+            <nom>Puma Smash V2 L</nom>
+            <prix>55.00</prix>
+            <image src="img/Puma-Smash-v2-L.png"></image>
+            <matiere>Cuir souple</matiere>
+            <matiere>Caoutchouc</matiere>
+            <stock>
+                <couleur nomCouleur="blanc">
+                    <taille quantite="23">44</taille>
+                </couleur>
+                <couleur nomCouleur="noir">
+                    <taille quantite="34">43</taille>
+                </couleur>
+            </stock>
+        </chaussure>
+        <chaussure nomMarque="Puma">
+            <nom>Graviton</nom>
+            <prix>65.00</prix>
+            <image src=""></image>
+            <matiere></matiere>
+            <stock>
+                <couleur nomCouleur="noir">
+                    <taille quantite="13">44</taille>
+                    <taille quantite="32">42</taille>
+                </couleur>
+                <couleur nomCouleur="blanc-vert">
+                    <taille quantite="23">45</taille>
+                </couleur>
+                <couleur nomCouleur="noir-blanc">
+                    <taille quantite="23">44</taille>
+                    <taille quantite="12">45</taille>
+                    <taille quantite="23">46</taille>
+                </couleur>
+            </stock>
+        </chaussure>
+        <chaussure nomMarque="Louboutin">
+            <nom>Our George L</nom>
+            <prix>795.00</prix>
+            <image src="img/our_george_l.jpg"></image>
+            <matiere>Cuir de veau verni</matiere>
+            <stock>
+                <couleur nomCouleur="noir">
+                    <taille quantite="8">41</taille>
+                    <taille quantite="9">44</taille>
+                </couleur>
+                <couleur nomCouleur="blanc">
+                    <taille quantite="10">40</taille>
+                    <taille quantite="9">41</taille>
+                    <taille quantite="2">42</taille>
+                    <taille quantite="8">43</taille>
+                    <taille quantite="10">44</taille>
+                    <taille quantite="4">45</taille>
+                </couleur>
+            </stock>
+        </chaussure>
+        <chaussure nomMarque="Louboutin">
+            <nom>Fun Louis</nom>
+            <prix>795.00</prix>
+            <image src="img/fun_louis.jpg"></image>
+            <matiere>Tissu</matiere>
+            <matiere>Denim</matiere>
+            <stock>
+                <couleur nomCouleur="Bleu marine">
+                    <taille quantite="11">40</taille>
+                    <taille quantite="12">41</taille>
+                    <taille quantite="13">42</taille>
+                    <taille quantite="10">43</taille>
+                    <taille quantite="9">44</taille>
+                    <taille quantite="8">45</taille>
+                </couleur>
+            </stock>
+        </chaussure>
+        <chaussure nomMarque="Louboutin">
+            <nom>Louis Sakura</nom>
+            <prix>2495.00</prix>
+            <image src="img/louis_sakura.jpg"></image>
+            <matiere>Tissu</matiere>
+            <stock>
+                <couleur nomCouleur="bleu">
+                    <taille quantite="15">42</taille>
+                    <taille quantite="12">43</taille>
+                    <taille quantite="10">44</taille>
+                    <taille quantite="14">45</taille>
+                </couleur>
+            </stock>
+        </chaussure>
     </collection>
 </catalogue>
