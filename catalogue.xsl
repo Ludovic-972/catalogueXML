@@ -12,13 +12,6 @@
         </head>
         <body>
             <div id="header">
-                <table border="1">
-                    <tr>
-                        <xsl:for-each select="//marque">
-                            <th class="marqueHeader"><xsl:value-of select="@nomMarque"/></th>
-                        </xsl:for-each>
-                    </tr>
-                </table>
                 <div id="searchbox">
                     <label for="marque">Marque : 
                         <select id="marque">
@@ -54,9 +47,9 @@
                             <xsl:for-each select="//matiere[not(text()=preceding::matiere/text())]">
                                 <option>
                                     <xsl:attribute name="value">
-                                        <xsl:value-of select="upper-case(current()/text())"/>
+                                        <xsl:value-of select="current()/text()"/>
                                     </xsl:attribute>
-                                    <xsl:value-of select="upper-case(current()/text())"/>
+                                    <xsl:value-of select="current()/text()"/>
                                 </option>
                             </xsl:for-each>  
                         </select>
@@ -68,7 +61,7 @@
                     
                     <label for="prixMax">
                         Prix maximum:
-                        <input id="prixMax" type="number" onchange="watch()">
+                        <input id="prixMax" type="number">
                             <xsl:attribute name="min">
                                 <xsl:value-of select="//chaussure[prix = min(//chaussure/prix)]/prix"/>
                             </xsl:attribute>
@@ -93,14 +86,14 @@
                     <th>Marque</th>
                 </tr>
                 <xsl:for-each select="//chaussure">
-                    <tr>
+                    <tr class="chaussure">
                         <td>
-                        <xsl:value-of select="nom"/>
-                        <img>
-                            <xsl:attribute name="src">
-                                <xsl:value-of select='image/@src'/>
-                            </xsl:attribute>
-                        </img><br/>
+                            <xsl:value-of select="nom"/>
+                            <img>
+                                <xsl:attribute name="src">
+                                    <xsl:value-of select='image/@src'/>
+                                </xsl:attribute>
+                            </img><br/>
                         </td>
                         <td>
                             <xsl:value-of select="prix"/>
